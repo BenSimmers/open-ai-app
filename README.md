@@ -1,8 +1,9 @@
 # Open AI React App
 
 
-##Description
+## Description
 React Application using the Open AI API
+<hr/>
 
 ## Installation
 ```bash
