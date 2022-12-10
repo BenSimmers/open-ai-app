@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 
 const MakePhoto = (props) => {
   const [images, setImages] = useState([]);
-  const [prompt, setPrompt] = React.useState('');
-  const [n, setN] = React.useState(1);
+  const [prompt, setPrompt] = useState('');
+  const [n, setN] = useState(1);
 
-  const apiKey = 'YOUR_API_KEY';
+  const apiKey = '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';
 
   const generateImages = () => {
     const url = 'https://api.openai.com/v1/images/generations';
@@ -35,7 +35,6 @@ const MakePhoto = (props) => {
 
       <h1>Make a Photo</h1>
       <p>Click the button to generate a photo</p>
-      {/* make a form */}
       <form>
         <label htmlFor="prompt">Prompt</label>
         <input
@@ -55,17 +54,12 @@ const MakePhoto = (props) => {
       {/* make a button */}
 
       <button onClick={generateImages}>Generate Images</button>
-
-
       {
         images.length === 0 ? <p>Loading...</p> : 
         images.map((image) => (
         <img src={image.url} alt="A nice Photos" />
       ))
-
       }
-
-
     </div>
   );
 };
