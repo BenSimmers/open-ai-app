@@ -22,4 +22,3 @@ npm start
 npm run build
 ```
 ## See the live demo here
-https://open-ai-tool.netlify.app/
